@@ -108,8 +108,8 @@ class Page1:
         box_size_weight = float(self.entries["容器宽"].get())
         box_size_high = float(self.entries["容器高"].get())
 
-        length = float(self.entries["材料长度"].get())
-        weight = float(self.entries["材料宽度"].get())
+        length = float(self.entries["层长度"].get())
+        weight = float(self.entries["层宽度"].get())
 
         d1 = float(self.entries["A密度"].get())
         d2 = float(self.entries["B密度"].get())
@@ -143,8 +143,8 @@ class Page1:
         result_text += f"容器长: {box_size_length}\n"
         result_text += f"容器宽: {box_size_weight}\n"
         result_text += f"容器高: {box_size_high}\n"
-        result_text += f"材料长度: {length}\n"
-        result_text += f"材料宽度: {weight}\n"
+        result_text += f"层长度: {length}\n"
+        result_text += f"层宽度: {weight}\n"
         result_text += f"a密度: {d1}\n"
         result_text += f"b密度: {d2}\n"
         result_text += f"c密度: {d3}\n"
