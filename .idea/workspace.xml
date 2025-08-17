@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb1db18-e29b-44aa-a30b-83dfdd8c1ab0" name="默认变更列表" comment="" />
+    <list default="true" id="fcb1db18-e29b-44aa-a30b-83dfdd8c1ab0" name="默认变更列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/high_energy_explosive.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/high_energy_explosive.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwl/jwl_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/jwl/jwl_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwl/jwl_yt_final_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/jwl/jwl_yt_final_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/micro/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/water/bubble_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/water/bubble_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/water/energy_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/water/energy_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yt/plot_vx_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/yt/plot_vx_gui.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "15197580192"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/15197580192/high_energy_explosive.git",
+    "accountId": "6091342d-2e48-47b9-b526-d3fa5d34b52c"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,20 +55,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.bubble_gui.executor": "Run",
     "Python.calc_box.executor": "Run",
     "Python.calc_circular.executor": "Run",
     "Python.calc_concentricball.executor": "Run",
     "Python.calc_inner_circular.executor": "Run",
     "Python.calc_mixed_circular.executor": "Run",
     "Python.calc_net_ball.executor": "Run",
+    "Python.energy_gui.executor": "Run",
     "Python.gui.executor": "Run",
     "Python.jwl_gui.executor": "Run",
+    "Python.jwl_yt_final_gui.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
+    "Python.plot_vx_gui.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<未知>",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "F:/研究生/chemistry/high_energy_explosive",
     "settings.editor.selected.configurable": "build.tools"
@@ -67,8 +94,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="calc_box" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ProGkk" />
+    <configuration name="bubble_gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="high_energy_explosive" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,12 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/material_pile" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/water" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/material_pile/calc_box.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/water/bubble_gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,8 +116,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calc_inner_circular" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ProGkk" />
+    <configuration name="energy_gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="high_energy_explosive" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,12 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/material_pile" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/water" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/material_pile/calc_inner_circular.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/water/energy_gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,8 +138,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calc_mixed_circular" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ProGkk" />
+    <configuration name="jwl_gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="high_energy_explosive" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,12 +147,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/material_pile" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jwl" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/material_pile/calc_mixed_circular.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jwl/jwl_gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,8 +160,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calc_net_ball" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ProGkk" />
+    <configuration name="jwl_yt_final_gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="high_energy_explosive" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,12 +169,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/material_pile" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jwl" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/material_pile/calc_net_ball.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jwl/jwl_yt_final_gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +183,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ProGkk" />
+      <module name="high_energy_explosive" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,9 +191,8 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -185,10 +207,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.calc_box" />
-        <item itemvalue="Python.calc_net_ball" />
-        <item itemvalue="Python.calc_mixed_circular" />
-        <item itemvalue="Python.calc_inner_circular" />
+        <item itemvalue="Python.energy_gui" />
+        <item itemvalue="Python.bubble_gui" />
+        <item itemvalue="Python.jwl_yt_final_gui" />
+        <item itemvalue="Python.jwl_gui" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +251,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/jwl/jwl_yt_final_gui.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

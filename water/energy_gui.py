@@ -17,10 +17,10 @@ class Page5:
 
         self.default_params = {
             "r0": "1.0",
-            "rho(w)": "1025.0",
+            "密度(w)": "1025.0",
             "c(w)": "1647.0",
             "m(w)": "0.026",
-            "filename": "water/w-p-t-1-1.0m.txt"
+            "数据文件": "water/w-p-t-1-1.0m.txt"
         }
 
         self.entries = {}
@@ -52,9 +52,9 @@ class Page5:
         calculate_button.grid(row=row_counter + 2, column=0, columnspan=2, pady=10)
 
     def upload_file(self):
-        self.entries["filename"].delete(0, tk.END)
+        self.entries["数据文件"].delete(0, tk.END)
         filename = filedialog.askopenfilename(title="上传数据文件", filetypes=[("Text files", "*.txt")])
-        self.entries["filename"].insert(0, filename)
+        self.entries["数据文件"].insert(0, filename)
 
     def set_default_params(self):
         for key, value in self.default_params.items():
@@ -64,10 +64,10 @@ class Page5:
     def calculate_and_display(self):
         try:
             r0 = float(self.entries["r0"].get())
-            rho_w = float(self.entries["rho(w)"].get())
+            rho_w = float(self.entries["密度(w)"].get())
             c_w = float(self.entries["c(w)"].get())
             m_w = float(self.entries["m(w)"].get())
-            filename = self.entries["filename"].get()
+            filename = self.entries["数据文件"].get()
 
             with open(filename, 'r') as infile:
                 datain = infile.readlines()[8:]

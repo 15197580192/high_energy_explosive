@@ -9,14 +9,14 @@ class Page1:
         self.frame.pack()
 
         self.default_params = {
-            "time": 490/1000,
-            "mw(c)": 45, "mw(ap)": 35, "mw(al)": 100 - 45 - 35,
-            "radius(c)": 120, "radius(ap)": 120, "radius(al)": 13,
-            "rho(c)": 2.04, "rho(ap)": 1.954, "rho(al)": 2.102,
-            "frac(cap)": 0.1, "frac(cal)": 0.6, "frac(cc)": 1.0 - 0.1 - 0.6,
-            "frac(apap)": 0.7, "frac(apal)": 1.0 - 0.7 - 0.1,
-            "kcc": 13, "kcap": 12, "kcal": 35,
-            "kapap": 18.0, "kapal": 15, "kalal": 8
+            "时间": 490/1000,
+            "重量百分数(c)": 45, "重量百分数(ap)": 35, "重量百分数(al)": 100 - 45 - 35,
+            "半径(c)": 120, "半径(ap)": 120, "半径(al)": 13,
+            "密度(c)": 2.04, "密度(ap)": 1.954, "密度(al)": 2.102,
+            "接触比例(cap)": 0.1, "接触比例(cal)": 0.6, "接触比例(cc)": 1.0 - 0.1 - 0.6,
+            "接触比例(apap)": 0.7, "接触比例(apal)": 1.0 - 0.7 - 0.1,
+            "速率常数(cc)": 13, "速率常数(cap)": 12, "速率常数(cal)": 35,
+            "速率常数(apap)": 18.0, "速率常数(apal)": 15, "速率常数(alal)": 8
         }
 
         self.entries = {}
@@ -112,28 +112,28 @@ class Page1:
             for key in self.default_params:
                 self.default_params[key] = float(self.entries[key].get())
 
-            radius_c = self.default_params["radius(c)"]
-            radius_ap = self.default_params["radius(ap)"]
-            radius_al = self.default_params["radius(al)"]
+            radius_c = self.default_params["半径(c)"]
+            radius_ap = self.default_params["半径(ap)"]
+            radius_al = self.default_params["半径(al)"]
 
-            rho_c = self.default_params["rho(c)"]
-            rho_ap = self.default_params["rho(ap)"]
-            rho_al = self.default_params["rho(al)"]
+            rho_c = self.default_params["密度(c)"]
+            rho_ap = self.default_params["密度(ap)"]
+            rho_al = self.default_params["密度(al)"]
 
-            frac_cap = self.default_params["frac(cap)"]
-            frac_cal = self.default_params["frac(cal)"]
+            frac_cap = self.default_params["接触比例(cap)"]
+            frac_cal = self.default_params["接触比例(cal)"]
             frac_cc = 1.0 - frac_cap - frac_cal
 
-            frac_apap = self.default_params["frac(apap)"]
+            frac_apap = self.default_params["接触比例(apap)"]
             frac_apal = 1.0 - frac_apap - frac_cap
 
-            kcc = self.default_params["kcc"]
-            kcap = self.default_params["kcap"]
-            kcal = self.default_params["kcal"]
+            kcc = self.default_params["速率常数(cc)"]
+            kcap = self.default_params["速率常数(cap)"]
+            kcal = self.default_params["速率常数(cal)"]
 
-            kapap = self.default_params["kapap"]
-            kapal = self.default_params["kapal"]
-            kalal = self.default_params["kalal"]
+            kapap = self.default_params["速率常数(apap)"]
+            kapal = self.default_params["速率常数(apal)"]
+            kalal = self.default_params["速率常数(alal)"]
 
             sem_c = 3.0 / (rho_c * radius_c)
             sem_ap = 3.0 / (rho_ap * radius_ap)
@@ -153,9 +153,9 @@ class Page1:
             sem_apal = sum_ap * abs(1.0 - frac_apap - frac_apal)
             sem_alal = sum_al * abs(1.0 - frac_cal - frac_apal)
 
-            lambda_c = 1.0 - math.exp(- (kcc * sem_cc + kcal * sem_cal + kcap * sem_cap) * self.default_params["time"])
-            lambda_ap = 1.0 - math.exp(- (kapap * sem_apap + kapal * sem_apal + kcap * sem_cap) * self.default_params["time"])
-            lambda_al = 1.0 - math.exp(- (kcal * sem_cal + kapal * sem_apal + kalal * sem_alal) * self.default_params["time"])
+            lambda_c = 1.0 - math.exp(- (kcc * sem_cc + kcal * sem_cal + kcap * sem_cap) * self.default_params["时间"])
+            lambda_ap = 1.0 - math.exp(- (kapap * sem_apap + kapal * sem_apal + kcap * sem_cap) * self.default_params["时间"])
+            lambda_al = 1.0 - math.exp(- (kcal * sem_cal + kapal * sem_apal + kalal * sem_alal) * self.default_params["时间"])
 
             result_text = f"sem: {sem_c}, {sem_ap}, {sem_al}\n"
             result_text += f"sum: {sum_c}, {sem_ap}, {sum_al}\n"

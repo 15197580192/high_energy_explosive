@@ -26,14 +26,14 @@ class Page3:
             "r1": "4.08",
             "r2": "1.09",
             "omega": "0.21",
-            "rho(0)": "1920.0",
-            "pcj": "22.0",
-            "dcj": "6817.0",
-            "e0": "8.69",
-            "rho(m)": "1920.0",
-            "radius(0)": "12.7",
+            "密度(0)": "1920.0",
+            "爆压(pcj)": "22.0",
+            "爆压(dcj)": "6817.0",
+            "内能(e0)": "8.69",
+            "密度(m)": "1920.0",
+            "圆筒半径": "12.7",
             "x0": "2.6",
-            "filename":"jwl/data.txt"
+            "数据文件":"jwl/data.txt"
         }
 
         self.entries = {}
@@ -70,13 +70,13 @@ class Page3:
             self.entries[key].insert(0, value)
 
     def upload_file(self):
-        self.entries["filename"].delete(0, tk.END)
+        self.entries["数据文件"].delete(0, tk.END)
         filename = filedialog.askopenfilename(title="上传数据文件", filetypes=[("Text files", "*.txt")])
-        self.entries["filename"].insert(0, filename)
+        self.entries["数据文件"].insert(0, filename)
 
     def calculate_and_display(self):
         try:
-            filename = self.entries["filename"].get()
+            filename = self.entries["数据文件"].get()
 
             with open(filename, 'r') as file:
                 lines = file.readlines()
@@ -92,12 +92,12 @@ class Page3:
             r2 = float(self.entries["r2"].get())
             omega = float(self.entries["omega"].get())
 
-            rho_0 = float(self.entries["rho(0)"].get())
-            pcj = float(self.entries["pcj"].get())
-            dcj = float(self.entries["dcj"].get())
-            e0 = float(self.entries["e0"].get())
-            rho_m = float(self.entries["rho(m)"].get())
-            radius_0 = float(self.entries["radius(0)"].get())
+            rho_0 = float(self.entries["密度(0)"].get())
+            pcj = float(self.entries["爆压(pcj)"].get())
+            dcj = float(self.entries["爆压(dcj)"].get())
+            e0 = float(self.entries["内能(e0)"].get())
+            rho_m = float(self.entries["密度(m)"].get())
+            radius_0 = float(self.entries["圆筒半径"].get())
             x0 = float(self.entries["x0"].get())
 
             Q0 = 7003.0*10**3

@@ -12,10 +12,10 @@ class Page4:
         self.frame.pack()
 
         self.default_params = {
-            "rhow": "1025",
-            "mw": "0.02640",
-            "pw": "148500",
-            "filename": "water/w-bubble.txt"
+            "密度(水)": "1025",
+            "重量(mw)": "0.02640",
+            "静压(pw)": "148500",
+            "数据文件": "water/w-bubble.txt"
         }
 
         self.entries = {}
@@ -47,9 +47,9 @@ class Page4:
         calculate_button.grid(row=row_counter + 2, column=0, columnspan=2, pady=10)
 
     def upload_file(self):
-        self.entries["filename"].delete(0, tk.END)
+        self.entries["数据文件"].delete(0, tk.END)
         filename = filedialog.askopenfilename(title="上传数据文件", filetypes=[("Text files", "*.txt")])
-        self.entries["filename"].insert(0, filename)
+        self.entries["数据文件"].insert(0, filename)
 
     def set_default_params(self):
         for key, value in self.default_params.items():
@@ -58,10 +58,10 @@ class Page4:
 
     def calculate_and_display(self):
         try:
-            rhow = float(self.entries["rhow"].get())
-            mw = float(self.entries["mw"].get())
-            pw = float(self.entries["pw"].get())
-            filename = self.entries["filename"].get()
+            rhow = float(self.entries["密度(水)"].get())
+            mw = float(self.entries["重量(mw)"].get())
+            pw = float(self.entries["静压(pw)"].get())
+            filename = self.entries["数据文件"].get()
 
             with open(filename, 'r') as infile:
                 datain = infile.readlines()[8:]

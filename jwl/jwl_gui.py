@@ -14,10 +14,10 @@ class Page2:
             "r2": "2.19",
             "omega": "0.25",
             # "gamma": "2.2",
-            "rho(0)": "1920",
-            "pcj": "24.0",
-            "dcj": "7026.0",
-            "e0": "9.67"
+            "密度(0)": "1920",
+            "爆压(pcj)": "24.0",
+            "爆压(dcj)": "7026.0",
+            "内能(e0)": "9.67"
             # "Q0": "7003.0"
         }
 
@@ -61,10 +61,10 @@ class Page2:
             r2 = float(self.entries["r2"].get())
             omega = float(self.entries["omega"].get())
             # gamma = float(self.entries["gamma"].get())
-            rho_0 = float(self.entries["rho(0)"].get())
-            pcj = float(self.entries["pcj"].get())
-            dcj = float(self.entries["dcj"].get())
-            e0 = float(self.entries["e0"].get())
+            rho_0 = float(self.entries["密度(0)"].get())
+            pcj = float(self.entries["爆压(pcj)"].get())
+            dcj = float(self.entries["爆压(dcj)"].get())
+            e0 = float(self.entries["内能(e0)"].get())
             # Q0 = float(self.entries["Q0"].get())
 
             gamma = (rho_0 * dcj**2) * 10**(-9) / pcj - 1.0

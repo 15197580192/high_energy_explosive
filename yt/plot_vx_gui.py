@@ -15,10 +15,10 @@ class Page6:
         self.frame.pack()
 
         self.default_params = {
-            "mass_of_the_container":"77.409",
-            "mass_of_the_explosive":"40.841",
-            "filename_expansion": "yt/yt-rx-t.txt",
-            "filename_velocity": "yt/yt-rx-t.txt",
+            "圆筒质量":"77.409",
+            "爆炸物重量":"40.841",
+            "膨胀": "yt/yt-rx-t.txt",
+            "速率": "yt/yt-rx-t.txt",
             "y0": "1.9"
         }
 
@@ -44,24 +44,24 @@ class Page6:
         default_params_button = tk.Button(self.frame, text="设置默认参数", command=self.set_default_params)
         default_params_button.grid(row=row_counter, column=0, columnspan=2, pady=10)
 
-        upload_expansion_button = tk.Button(self.frame, text="upload expansion", command=self.upload_expansion_file)
+        upload_expansion_button = tk.Button(self.frame, text="上传膨胀", command=self.upload_expansion_file)
         upload_expansion_button.grid(row=row_counter + 1, column=0, columnspan=1, pady=10)
 
-        upload_velocity_button = tk.Button(self.frame, text="upload velocity", command=self.upload_velocity_file)
+        upload_velocity_button = tk.Button(self.frame, text="上传速率", command=self.upload_velocity_file)
         upload_velocity_button.grid(row=row_counter + 1, column=1, columnspan=1, pady=10)
 
         calculate_button = tk.Button(self.frame, text="计算", command=self.calculate_and_display)
         calculate_button.grid(row=row_counter + 2, column=0, columnspan=2, pady=10)
 
     def upload_expansion_file(self):
-        self.entries["filename_expansion"].delete(0, tk.END)
+        self.entries["膨胀"].delete(0, tk.END)
         filename = filedialog.askopenfilename(title="上传扩张数据文件", filetypes=[("Text files", "*.txt")])
-        self.entries["filename_expansion"].insert(0, filename)
+        self.entries["膨胀"].insert(0, filename)
 
     def upload_velocity_file(self):
-        self.entries["filename_velocity"].delete(0, tk.END)
+        self.entries["速率"].delete(0, tk.END)
         filename = filedialog.askopenfilename(title="上传速度数据文件", filetypes=[("Text files", "*.txt")])
-        self.entries["filename_velocity"].insert(0, filename)
+        self.entries["速率"].insert(0, filename)
 
     def set_default_params(self):
         for key, value in self.default_params.items():
@@ -70,8 +70,8 @@ class Page6:
 
     def calculate_and_display(self):
         try:
-            filename_expansion = self.entries["filename_expansion"].get()
-            filename_velocity = self.entries["filename_velocity"].get()
+            filename_expansion = self.entries["膨胀"].get()
+            filename_velocity = self.entries["速率"].get()
             y0 = float(self.entries["y0"].get())
 
             with open(filename_expansion, 'r') as infile:
@@ -93,8 +93,8 @@ class Page6:
             interp_func = interp1d(x_velocity, y_velocity)
             velocity = interp_func(time_expansion)
 
-            m1 = float(self.entries["mass_of_the_container"].get())  # mass of the container
-            m2 = float(self.entries["mass_of_the_explosive"].get())  # mass of the explosive
+            m1 = float(self.entries["圆筒质量"].get())  # mass of the container
+            m2 = float(self.entries["爆炸物重量"].get())  # mass of the explosive
             e_gurney = (1 / 2 + m1 / m2) * (velocity ** 2) / 2
             gurney_p = (2 * e_gurney) ** 0.5
 
