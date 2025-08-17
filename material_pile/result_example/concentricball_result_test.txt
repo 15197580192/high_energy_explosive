@@ -1,0 +1,17 @@
+box_size£º27000.0
+radius of A£º2.0
+radius of B£º1.8296528550114857
+radius of C£º0.7937005259840998
+Actual Number of A balls£º500
+Volume of A£º3926.9908169872433
+Volume of B£º11780.972450961723
+Volume of C£º1047.197551196598
+Total volume£º16755.160819145563
+The mass of A£º3926.9908169872433
+The mass of B£º2356.194490192345
+The mass of C£º1570.796326794897
+Total mass£º7853.981633974486
+Number of A_A tangent pairs: 3000
+ALL of area A-B pairs: 21033.776927171995
+ALL of area B-C pairs: 3958.1587144528735
+

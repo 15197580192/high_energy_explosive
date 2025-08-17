@@ -1,0 +1,8 @@
+解压后，双击dist文件夹中的exe文件即可使用
+dist\
+calc_concentricall\calc_concentricall.exe	---同心球
+calc_box.exe	---长方体
+calc_circular.exe	---非等大小球
+calc_mixed_circular\calc_mixed_circular.exe	---同心球+非等大小球
+calc_inner_circular\calc_inner_circular.exe	---大球内部双小球
+calc_net_ball\calc_net_ball.exe	---网状结构

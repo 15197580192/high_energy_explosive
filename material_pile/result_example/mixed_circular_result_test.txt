@@ -1,0 +1,22 @@
+A Radius: 2.0
+B Radius: 1.5874010519681994
+C Radius: 1.0
+box_size_length: 30.0
+box_size_weight: 30.0
+box_size_high: 30.0
+Actual Number of A balls£º241
+Actual Number of B balls£º241
+Actual Number of C balls£º105
+Volume per A£º16.755160819145566
+Volume per B£º16.75516081914556
+Volume per C£º4.1887902047863905
+Total volume£º8515.810486330733
+The mass of A balls£º4037.9937574140813
+The mass of B balls£º807.5987514828159
+The mass of C balls£º659.7344572538566
+Total mass£º5505.326966150754
+Number of A-A tangent pairs: 83
+Number of A-C tangent pairs: 29
+Number of C-C tangent pairs: 1
+A-B Area: 25078.8936147734
+

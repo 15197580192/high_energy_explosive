@@ -1,0 +1,26 @@
+box_size_length: 30.0
+box_size_weight: 30.0
+box_size_high: 30.0
+each_length: 3.0
+each_weight: 2.0
+density_a: 1.0
+density_b: 0.5
+density_c: 1.5
+high_a: 2.0
+high_b: 1.0
+high_c: 3.0
+max_num_a: 750
+max_num_b: 750
+max_num_c: 750
+total_v1: 9000.0
+total_v2: 4500.0
+total_v3: 13500.0
+total_v: 27000.0
+total_m1: 9000.0
+total_m2: 2250.0
+total_m3: 20250.0
+total_m: 31500.0
+s_ab: 4500.0
+s_bc: 4500.0
+s_ac: 5400.0
+
